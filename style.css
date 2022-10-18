@@ -5,7 +5,7 @@ html, body {
 }
 
 html{
-    background-image: url('./images/adwaita-d.jpg');
+    background: content-box radial-gradient(crimson, skyblue);
     background-size: cover;
 }
 
@@ -81,7 +81,7 @@ body {
     position: relative;
     background-color: transparent;
     color: var(--accentColor);
-    border: solid var(--accentColor) 2px;
+    border: solid var(--accentColor ) 2px;
     border-radius: 20px;
     font-size: 1rem;
     text-align: center;
