@@ -6,7 +6,6 @@ html, body {
 
 html{
     background: content-box radial-gradient(crimson, skyblue);
-    background-size: cover;
 }
 
 body {
@@ -39,8 +38,7 @@ body {
 .description, .source{
     color:white;
     text-align:center;
-    margin: 27px auto;
-    margin-top:10px;
+    margin: 10px auto 27px;
     width:90%;
     max-width: 500px;
 }
