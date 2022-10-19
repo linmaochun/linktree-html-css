@@ -5,11 +5,12 @@ html, body {
 }
 
 html{
-    background: content-box radial-gradient(crimson, skyblue);
+    background:no-repeat url('./images/adwaita-d.jpg');
+    overflow: hidden;
 }
 
 body {
-    background: linear-gradient(-45deg, rgba(160, 20, 79, 0.75), rgba(109, 65, 161, 0.75));
+    background: linear-gradient(-45deg, rgba(102, 13, 51, 0.75), rgba(70, 42, 104, 0.75));
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
     padding-top:35px;
@@ -17,17 +18,17 @@ body {
     height:fit-content;
     min-height:100%;
 }
-  
+
 @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 :root {
@@ -48,7 +49,7 @@ body {
     margin-top:50px;
 }
 
-.profilePicture, .profilePicture img {
+.avatar, .avatar img {
     position: relative;
     width: 130px;
     height: 130px;
@@ -79,7 +80,7 @@ body {
     position: relative;
     background-color: transparent;
     color: var(--accentColor);
-    border: solid var(--accentColor ) 2px;
+    border: solid var(--accentColor) 2px;
     border-radius: 20px;
     font-size: 1rem;
     text-align: center;
@@ -105,4 +106,3 @@ body {
     color: #000; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
 }
-
