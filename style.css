@@ -1,12 +1,10 @@
 html, body {
     margin: 0;
     height: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 html{
     background:no-repeat url('./images/adwaita-d.jpg');
-    overflow: hidden;
 }
 
 body {
@@ -72,7 +70,8 @@ body {
 .links {
     max-width: 675px;
     width: auto;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 27px auto;
 }
 
@@ -85,12 +84,20 @@ body {
     font-size: 1rem;
     text-align: center;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-bottom: 10px;
     padding: 10px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+.link-left {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.link-right {
+    margin-left: 5px;
+    margin-right: 20px;
 }
 
 @media (hover: hover) {
@@ -105,4 +112,8 @@ body {
     background-color: var(--accentColor);
     color: #000; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
