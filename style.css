@@ -3,98 +3,44 @@
     padding: 0;
 }
 
-:root {
-    --accentColor: #E6E6E6;
-}
-
-.description, .source{
-    color:white;
-    text-align:center;
-    margin: 10px auto 27px;
-    width:90%;
-    max-width: 500px;
-}
-
-.source{
-    font-size:small;
-    margin-top:50px;
-}
-
-.avatar, .avatar img {
-    position: relative;
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 35px auto 20px;
-    border-radius: 50%;
-}
-
-.userName {
-    color: var(--accentColor);
-    font-size: x-large;
-    font-weight: bold;
-    line-height: 1.25;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-}
-
-.links {
-    max-width: 675px;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 27px auto;
-}
-
-.link {
-    position: relative;
-    background-color: transparent;
-    color: var(--accentColor);
-    border: solid var(--accentColor) 2px;
-    border-radius: 20px;
-    font-size: 1rem;
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.link-left {
-    margin-left: 20px;
-    margin-right: 5px;
-}
-
-.link-right {
-    margin-left: 5px;
-    margin-right: 20px;
-}
-
-@media (hover: hover) {
-    .link:hover {
-        background-color: var(--accentColor);
-        color: #000; /* Fallback for older browsers */
-        color: rgba(0, 0, 0, 0.5);
-    }
-}
-
-.link:active {
-    background-color: var(--accentColor);
-    color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
 .context {
     width: 100%;
     position: absolute;
     z-index: 1;
+}
+
+.avatar img{
+    width: 128px;
+    display: block;
+    margin: 32px auto 16px;
+    border-radius: 50%;
+}
+
+.name, .bio, .link,.source {
+    color: white;
+    text-align: center;
+}
+
+.links {
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.link {
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .area{
