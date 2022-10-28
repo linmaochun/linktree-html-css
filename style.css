@@ -38,7 +38,14 @@
     text-decoration: none;
 }
 
-.link:hover {
+@media (hover: hover) {
+    .link:hover {
+        background-color: white;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.link:active {
     background-color: white;
     color: rgba(0, 0, 0, 0.5);
 }
